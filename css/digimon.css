@@ -1,0 +1,44 @@
+* {
+  list-style: none;
+  font-family: "Dela Gothic One", cursive;
+}
+
+body {
+  background: #2b70ee;
+  background: linear-gradient(111deg, #2b70ee 7%, #3578bd 64%);
+}
+body > header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body ul#digimon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+body ul#digimon-list > li {
+  border: 1px solid white;
+  border-radius: 35px;
+  margin: 15px;
+  padding: 20px;
+  background-color: white;
+}
+body ul#digimon-list > li > img {
+  border-radius: 30px;
+  height: 250px;
+  width: 250px;
+  mix-blend-mode: multiply;
+}
+body ul#digimon-list > li h2 {
+  color: #fbff00;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 3px black;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=digimon.css.map */

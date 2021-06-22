@@ -1,0 +1,48 @@
+* {
+    list-style: none;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+//background: rgb(253,255,73);
+//background: linear-gradient(4deg, rgba(253,255,73,1) 7%, rgba(251,249,12,1) 64%);
+body {
+    background: rgb(43, 112, 238);
+    background: linear-gradient(111deg, rgba(43, 112, 238, 1) 7%, rgba(53, 120, 189, 1) 64%);
+    >header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >h1 {}
+        >div {}
+    }
+    ul#digimon-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        >li {
+            border: 1px solid white;
+            border-radius: 35px;
+            margin: 15px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            >img {
+                border-radius: 30px;
+                height: 250px;
+                width: 250px;
+                mix-blend-mode: multiply;
+            }
+            h2 {
+                color: rgb(251, 255, 0);
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: 2px 3px black;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
