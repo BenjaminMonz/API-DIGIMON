@@ -39,6 +39,10 @@ body ul#digimon-list > li h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 2px 3px black;
+  text-shadow: 4px 2px 5px black;
   letter-spacing: 5px;
+}
+
+.filtro {
+  display: none;
 }/*# sourceMappingURL=digimon.css.map */

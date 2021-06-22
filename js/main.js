@@ -1,3 +1,7 @@
+let txtNombre = document.getElementById('txtNombre');
+let ul = document.getElementById('digimon-list');
+
+
 document.addEventListener("DOMContentLoaded", function() {
     fetch("https://digimon-api.vercel.app/api/digimon")
         .then(function(response) {
@@ -19,13 +23,27 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function createDigimonCard(data) {
-    const div = document.createElement('li');
+    const li = document.createElement('li');
     const img = document.createElement('img');
     const nombre = document.createElement('h2');
     img.src = data.img;
     nombre.innerText = data.name
-    div.appendChild(img)
-    div.appendChild(nombre)
+    li.appendChild(img)
+    li.appendChild(nombre)
 
-    return div
+    return li
 }
+
+function filtarxnombre() {
+    let arraydigi = ul.children;
+    for (let i = 0; i < arraydigi.length; i++) {
+        if (!arraydigi[i].innerText.toUpperCase().includes(txtNombre.value.toUpperCase())) {
+            arraydigi[i].classList.add('filtro');
+        } else {
+            arraydigi[i].classList.remove('filtro')
+        }
+    }
+}
+
+txtNombre.onkeypress = filtarxnombre;
+txtNombre.onkeyup = filtarxnombre;
