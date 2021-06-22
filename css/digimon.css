@@ -1,6 +1,6 @@
 * {
   list-style: none;
-  font-family: "Dela Gothic One", cursive;
+  font-family: "Staatliches", cursive;
 }
 
 body {
@@ -12,6 +12,33 @@ body > header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body > header > h1 {
+  width: 75%;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  background: #fdff49;
+  background: linear-gradient(4deg, #fdff49 7%, #fbf90c 64%);
+}
+body > header > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 45%;
+  height: 50px;
+  background-color: red;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+body > header > div > label {
+  font-weight: bolder;
+  font-size: x-large;
 }
 body ul#digimon-list {
   display: flex;
@@ -35,6 +62,7 @@ body ul#digimon-list > li > img {
   mix-blend-mode: multiply;
 }
 body ul#digimon-list > li h2 {
+  font-family: "Dela Gothic One", cursive;
   color: #fbff00;
   text-align: center;
   text-transform: uppercase;
